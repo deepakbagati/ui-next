@@ -6,8 +6,8 @@ import Link from "next/link"
 const Footer = () => {
   return (
    <footer className="py-14 px-20 items-center text-2xl justify-center" id="footer">
-    <div className="flex flex-col">
-        <div className="flex bg-purple-900 md:h-[36rem] items-center justify-around rounded-3xl flex-wrap">
+    <div className="flex flex-col bg-purple-900 rounded-2xl">
+        <div className="flex md:h-[36rem] items-center justify-around flex-wrap">
 
             <div className="text-white max-w-[30rem] flex flex-col gap-5">
                 <h1 className="text-3xl font-bold">Teamly</h1>
@@ -41,10 +41,7 @@ const Footer = () => {
                 </ul>
             </div>
         </div>
-        <div>    
-        ©2024 Copyrights Reserved by Teamly
-        </div>
-        <div className="text-center text-lg mt-24">
+        <div className="text-center text-lg p-5 bg-purple-500 rounded-b-2xl">
             <p className="">©2024 Copyrights Reserved by Teamly</p>
         </div>
         </div>
