@@ -1,11 +1,12 @@
-import { footerData1, footerData2, footerData3 } from "@/constants/footerData";
-import Link from "next/link";
+import Image from "next/image"
+import { footerData1, footerData2, footerData3 } from "@/constants/footerData"
+import Link from "next/link"
 
 
 const Footer = () => {
   return (
    <footer className="py-14 px-20 items-center text-2xl justify-center" id="footer">
-    <div className="   bg-purple-700  rounded-lg flex flex-col">
+    <div className="  bg-purple-700 flex flex-col">
         <div className="flex md:h-[36rem] items-center justify-around rounded-3xl flex-wrap">
 
             <div className="text-white max-w-[30rem] flex flex-col gap-5">
@@ -15,39 +16,37 @@ const Footer = () => {
 
             <div className="flex gap-10">
                 <ul>
-                    <h3 className="font-bold mb-3 text-xl">Main Pages</h3>
+                    <h3 className="font-bold mb-3 pl-2 text-xl">Main Pages</h3>
                     {footerData1.map((item, index) => (
                         <Link href={`${item.link}`} key={index}>
-                            <li className="text-lg pt-3 font-normal">{item.name}</li>
+                            <li className="text-lg p-2 font-normal hover:bg-slate-500/30 hover:rounded-2xl hover:underline">{item.name}</li>
                         </Link>
                     ))}
                 </ul>
                 <ul>
-                <h3 className="text-xl font-bold mb-3">Secondary Pages</h3>
+                <h3 className="text-xl font-bold mb-3 pl-2">Secondary Pages</h3>
                     {footerData2.map((item, index) => (
                         <Link href={`${item.link}`} key={index}>
-                            <li key={index} className="text-lg pt-3 font-normal">{item.name}</li>
+                            <li key={index} className="text-lg p-2 font-normal hover:bg-slate-500/30 hover:rounded-2xl hover:underline">{item.name}</li>
                         </Link>
                     ))}
                 </ul>
                 <ul>
-                <h3 className="text-xl font-bold mb-3">Extra Pages</h3>
+                <h3 className="text-xl font-bold mb-3 pl-2">Extra Pages</h3>
                     {footerData3.map((item, index) => (
                         <Link href={`${item.link}`} key={index}>
-                            <li key={index} className="text-lg pt-3 font-normal">{item.name}</li>
+                            <li key={index} className="text-lg p-2 font-normal hover:bg-slate-500/30 hover:rounded-2xl hover:underline">{item.name}</li>
                         </Link>
                     ))}
                 </ul>
             </div>
         </div>
-        <div className="text-white text-center mt-10">    
-        ©2024 Copyrights Reserved by Teamly
+        <div className="text-center text-lg p-5 bg-purple-500 rounded-b-2xl">
+            <p className="">©2024 Copyrights Reserved by Teamly</p>
         </div>
-
-    </div>
-    
-   </footer>
-  )
+        </div>
+    </footer>
+    )
 }
 
 export default Footer
