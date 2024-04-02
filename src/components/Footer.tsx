@@ -6,10 +6,9 @@ import Link from "next/link"
 const Footer = () => {
   return (
    <footer className="py-14 px-20 items-center text-2xl justify-center" id="footer">
-    
-        <div className="flex flex-col bg-purple-900 h-[36rem] justify-center rounded-3xl overflow-hidden">
+    <div className="flex flex-col">
+        <div className="flex bg-purple-900 md:h-[36rem] items-center justify-around rounded-3xl flex-wrap">
 
-            <div className="flex items-center justify-around flex-wrap">
             <div className="text-white max-w-[30rem] flex flex-col gap-5">
                 <h1 className="text-3xl font-bold">Teamly</h1>
                 <p className="text-lg leading-6 font-semibold">Teamly is powerful Framer template empowers you to streamline workflows, boost collaboration, and unleash your team's potential.</p>        
@@ -41,7 +40,9 @@ const Footer = () => {
                     ))}
                 </ul>
             </div>
-            </div>
+        </div>
+        <div>    
+        ©2024 Copyrights Reserved by Teamly
         </div>
         <div className="text-center text-lg mt-24">
             <p className="">©2024 Copyrights Reserved by Teamly</p>
