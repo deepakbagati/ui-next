@@ -1,13 +1,12 @@
-import Image from "next/image"
-import { footerData1, footerData2, footerData3 } from "@/constants/footerData"
-import Link from "next/link"
+import { footerData1, footerData2, footerData3 } from "@/constants/footerData";
+import Link from "next/link";
 
 
 const Footer = () => {
   return (
    <footer className="py-14 px-20 items-center text-2xl justify-center" id="footer">
-    <div className="flex flex-col">
-        <div className="flex bg-purple-700 md:h-[36rem] items-center justify-around rounded-3xl flex-wrap">
+    <div className="   bg-purple-700  rounded-lg flex flex-col">
+        <div className="flex md:h-[36rem] items-center justify-around rounded-3xl flex-wrap">
 
             <div className="text-white max-w-[30rem] flex flex-col gap-5">
                 <h1 className="text-3xl font-bold">Teamly</h1>
