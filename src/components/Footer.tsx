@@ -47,8 +47,9 @@ const Footer = () => {
         <div className="text-center text-lg mt-24">
             <p className="">©2024 Copyrights Reserved by Teamly</p>
         </div>
-   </footer>
-  )
+        </div>
+    </footer>
+    )
 }
 
 export default Footer
